@@ -85,7 +85,6 @@ public class AutoExcel {
             throw new Exception("Cannot find template file: " + templatePath);
 
         Workbook workbook = new XSSFWorkbook(templatePath);
-
         //action before internal operations
         if (actionAhead != null)
             actionAhead.accept(workbook);
